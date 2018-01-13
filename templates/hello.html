@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Hi!</h1>
+    <form action="/profile" method="get">
+      <input type="text" name="name">
+      <input type="submit" name="submit" value="Say hello">
+    </form>
+{% endblock %}
