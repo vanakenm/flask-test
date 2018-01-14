@@ -6,10 +6,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('hello.html')
+    return render_template('index.html')
 
-@app.route('/profile')
-def show_user_profile():
+@app.route('/say_hello')
+def say_hello():
     # show the user profile for that user
-    return render_template('profile.html', username=request.args.get('name', ''))
+    return render_template('hello.html', name=request.args.get('name', ''))
 
